@@ -18,7 +18,6 @@ def kaniner(food,months):
 	fasit = [food - 2*sum(r[:i]) if food - 2*sum(r[:i]) >= 0 else 0 for i in range(months)]
 	return r,f_left,fasit
 
-
 r, f_left,fasit = kaniner(200,12)
 plot(r, "o-",label="rabbit population")
 plot(f_left, "o-",label="food supply")
